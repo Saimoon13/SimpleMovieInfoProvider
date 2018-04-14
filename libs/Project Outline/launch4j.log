@@ -1,0 +1,29 @@
+
+
+Version:	3.10
+CmdLine:	C:\Users\STU\Desktop\Project Outline\project.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\STU\Desktop\Project Outline\.
+Java min ver:	1.7.0
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_144\bin\javaw.exe (OK)
+Match:		1.8
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_144
+Check launcher:	C:\Program Files\Java\jre1.8.0_144\bin\javaw.exe (OK)
+Match:		1.8.0_144
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.8
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_144
+Ignore:		1.8.0_144
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.8.0_144 (64-bit)
+Main class:	edu.java.view.Main
+Add classpath:	.
+Launcher:	C:\Program Files\Java\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\STU\Desktop\Project Outline\project.exe;." edu.java.view.Main
+Args length:	84/32768 chars
+Exit code:	0
