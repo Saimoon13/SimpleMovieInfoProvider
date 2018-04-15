@@ -8,7 +8,8 @@ Language and design pattern used : Java 8, Strategy pattern
 
 Project Type: Refactoring
 
-Total elapsed time: 6 hour
+Total elapsed time original: 3 weeks
+Total elapsed time reform: 6 hour
 
 <details><summary>한국어 CLICK ME</summary>
 <p>
