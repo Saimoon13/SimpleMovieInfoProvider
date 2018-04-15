@@ -138,7 +138,7 @@ public class ProjectDAOImple implements ProjectDAO {
 
         if(crs.next()){
             hashMap.put("dbtitle", crs.getString(1));
-            hashMap.put("moveinfo", crs.getString(2));
+            hashMap.put("movieinfo", crs.getString(2));
             hashMap.put("tomato", crs.getString(3));
             hashMap.put("poster", crs.getString(4));
         }
