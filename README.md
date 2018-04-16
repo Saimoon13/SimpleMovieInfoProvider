@@ -62,7 +62,7 @@ Total elapsed time reform: 6 hour
 
 &nbsp;
 
-**１．構成が雑すぎる。**
+**１．構成が雑すぎます。**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/01.png)
 
@@ -77,7 +77,7 @@ SwingMovieは大きく三つの機能で分けられております。
 
 &nbsp;
 
-**２．ViewでDBとのConnectが発生しております。**
+**２．ViewでDBとのConnectが発生しています。**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/02.png)
 
@@ -137,7 +137,7 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 **１問題（構成の問題）の解決方法**
 
-構成の問題点は上から説明しましたので、
+構成の問題点は上で説明しましたので、
 
 クラスの説明をさせて頂きます。
 
