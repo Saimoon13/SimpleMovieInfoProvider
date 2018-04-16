@@ -50,7 +50,7 @@ Total elapsed time reform: 6 hour
 
 そのため、昔作ったこのプログラムをRefactoringしようと思いました。
 
-プロジェクトの機能は少しの間、下のYoutubeをご覧頂きたいと思っております。
+プロジェクトの機能は少しの間、上のYoutubeをご覧頂きたいと思っております。
 
 
 
