@@ -153,7 +153,7 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 * ProjectDAO Interface and implementation Class
 
-ProjectDAO、ProjectDAOImpleは依然と同じく、DBからの交流のコードが組み込まれておりますが、
+ProjectDAO、ProjectDAOImpleは以前と同じく、DBからの交流のコードが組み込まれておりますが、
 
 その中のコードの効率性は確実によくなっております。
 
@@ -269,7 +269,7 @@ CacheRowSetImplの形でリターンするように仕組まれております�
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/10.png)
 
-左が依然のコードで、右がRefactoringしたコードです。
+左が以前のコードで、右がRefactoringしたコードです。
 
 ここではコードを短くするため、Ramda式を使いました。
 
