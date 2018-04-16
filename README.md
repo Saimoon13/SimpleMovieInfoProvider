@@ -275,7 +275,7 @@ CacheRowSetImplの形でリターンするように仕組まれております�
 
 接続とその中身はJdbcContextクラスに預けておりますので、このメソッドの役目は
 
-ただ、PreparedStatementを用意し、転送することのみです。
+ただ、PreparedStatementを用意したストラテジーを作り、転送することのみです。
 
 DAOの目的を忠実に果たしています。
 
