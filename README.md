@@ -124,5 +124,61 @@ Interfaceは「データを実装するために使う」という一つの約�
 文字列を使う為の使用はよくありません。他の方法を探す必要があります。
 
 
+## 問題点の解決方法
+
+１の問題点
+
+構成の問題点は上から説明しましたので、
+
+クラスの説明をさせて頂きます。
+
+* JdbcContext Class
+
+まず、以前にはなかったJdbcContextが出来ました。
+
+そのクラスの役割はOracleDBからのConnectionを管理することです。
+
+先に話してましたが、以前のコードは合わせて6回のConnectionを呼び出して、作っております。
+
+その重複問題を解決するための策です。
+
+* ProjectDAO Interface and implementation Class
+
+ProjectDAO、ProjectDAOImpleは依然と同じく、DBからの交流のコードが組み込まれておりますが、
+
+その中のコードの効率性は確実によくなっております。
+
+後ほど説明させていただきます。
+
+* StatementStrategy
+
+StatementStrategyは戦略を練るためのInterfaceです。
+
+後にも説明しますが、DBからの接近のコードは似ているように見えて
+
+中身は違う処がありませて、一律的には処理できません。
+
+
+その為にStrategyPatternを使いました。
+
+このStrategyPatternはJdbcContextと、ProjectDAOImpleで使うことになります。
+
+StrategyPatternをご存知ではないお方は、自分が整理しておいた投稿があります。
+
+ぜひ、下のURLをご参考お願い致します。
+
+https://meaownworld.blogspot.kr/2018/03/strategy-pattern.html
+
+
+
+
+
+Queriesと、
+
+
+
+
+
+
 </p>
 </details>
