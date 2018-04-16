@@ -77,7 +77,7 @@ SwingMovieは大きく三つの機能で分けられております。
 
 **２．ViewでDBとのConnectが発生しております。**
 
-ーーーーーーーーーーーーーーーー２－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/02.png)
 
 GUI、MyFrame_Loginはユーザーに見せるための処です。
 
@@ -99,8 +99,7 @@ Javaのクラスでは一クラスに一つの機能が理想的です。
 
 **３．DAOで重複コードが多すぎます。**
 
-ーーーーーーーーーーーーーーーー３－－－－－－－－－－－－－－－－－－
-
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/03.png)
 DBとのConnectを管理するクラスDAOにメソッドごとに
 同じことが繰り返しています。
 
@@ -123,7 +122,7 @@ DBとのConnectを管理するクラスDAOにメソッドごとに
 
 **４．Interfaceを文字列の利用に使っています。**
 
-ーーーーーーーーーーーーーーーー４－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/04.png)
 
 Interfaceは「データを実装するために使う」という一つの約束です。
 
@@ -140,7 +139,7 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 クラスの説明をさせて頂きます。
 
-ーーーーーーーーーーーーーーーー５－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/05.png)
 
 * JdbcContext Class
 
@@ -199,7 +198,7 @@ DomainやViewは最初作る時も大分手を込んで作っておりますし�
 
 **２問題（ViewでのConnectionの発生）の解決方法**
 
-ーーーーーーーーーーーーーーーー６－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/06.png)
 
 まず、ViewのConnectionコードをProjectDAOImpleに移しました。
 
@@ -219,7 +218,7 @@ Connection自体を生成してはその二つの目的を持つことになり�
 
 そのクラスがこのJdbcContextです。
 
-ーーーーーーーーーーーーーーーー７－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/07.png)
 
 JdbcContextのポイントは四つあります。
 
@@ -239,7 +238,7 @@ https://meaownworld.blogspot.kr/2018/02/effective-java-3.html)
 
 中身はこうなっております。
 
-ーーーーーーーーーーーーーーーー８－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/08.png)
 
 ProjectDAOImpleからPreparedStatementを含んだ戦略がパラメータに入ってくると
 
@@ -251,7 +250,7 @@ Select文は途中ResultSetを使うため、別のメソッドを作れざる�
 
 中身はこんな風になっております。
 
-ーーーーーーーーーーーーーーーー９－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/09.png)
 
 ResultSetは直接リターンすることはできません。
 
@@ -266,7 +265,7 @@ CacheRowSetImplの形でリターンするように仕組まれております�
 
 以下はInsert(Create)のメソッドです。
 
-ーーーーーーーーーーーーーーーー１０－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/10.png)
 
 左が依然のコードで、右がRefactoringしたコードです。
 
@@ -285,7 +284,7 @@ DAOの目的を忠実に果たしています。
 
 ResultSetを使うSelect文も一つ前後を比べてみます。
 
-ーーーーーーーーーーーーーーーー１１－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/11.png)
 
 基本上と同じくですが、CachedRowSetImplを使いデータの作業をしていることが違います。
 
@@ -298,7 +297,7 @@ Queriesとqueries.propertiesは以前InterfaceにSQL文を保管する問題点�
 
 Queriesクラスを見てください。
 
-ーーーーーーーーーーーーーーーー１２－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/12.png)
 
 queries.propertiesを探し、その経路を保管しています。
 
@@ -306,7 +305,7 @@ queries.propertiesを探し、その経路を保管しています。
 
 以前とこのクラスが利用するpropertiesの内容です。
 
-ーーーーーーーーーーーーーーーー１３－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/13.png)
 
 左が以前のもので、右が変わったものです。
 
@@ -315,7 +314,7 @@ queries.propertiesを探し、その経路を保管しています。
 
 実際にQueryを呼び出す時の変化です。
 
-ーーーーーーーーーーーーーーーー１４－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/14.png)
 
 少し、長くなりましたが、効率かオブジェクト指向の為には以後の方が学実によい形だと思います。
 
