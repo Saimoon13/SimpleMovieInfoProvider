@@ -96,7 +96,7 @@ DBとのConnectを管理するクラスDAOにメソッドごとに
 
 * 接続のConnection
 * SQLコマンドのPreparedStatement
-* データセットのResultSet
+* データセットのResultSet（Select文を使う時のみ使います）
 
 イメージの制約のやめ、イメージでは3行になっておりますけれども
 
