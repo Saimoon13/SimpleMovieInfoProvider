@@ -126,7 +126,7 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 ## 問題点の解決方法
 
-１の問題点
+**１の問題点**
 
 構成の問題点は上から説明しましたので、
 
@@ -175,10 +175,10 @@ https://meaownworld.blogspot.kr/2018/03/strategy-pattern.html
 
 Queriesは上で述べました４の問題を解決するためのクラスです。
 
-QueriesがSQLコマンドを作ってくれる工場の役割を、queries.propertiesが製品の役割を果たします。
+QueriesがSQLコマンドを作ってくれる工場の役を、queries.propertiesが製品の役をします。
 
 
-
+**２の問題**
 
 
 
