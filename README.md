@@ -6,7 +6,7 @@ Environment: Oracle 6g, WindowBuilder, Swing
 
 Language and design pattern used : Java 8, Strategy pattern
 
-Project Type: Refactoring
+Project Type: Refactoring - https://github.com/Saimoon13/OldSimpleMovieInfoProvider
 
 Total elapsed time original: 3 weeks
 
@@ -28,6 +28,8 @@ Total elapsed time reform: 6 hour
 
 簡単に映画の情報を提供して、
 映画を見た人のコメントを入力するプロジェクトです。
+
+そのプログラムは上のURLをアップロードしております。
 
 
 私が最初作る時は、DesignPatternに対する知識もなかったし、
