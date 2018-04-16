@@ -219,10 +219,9 @@ JdbcContextを呼び出すクラスはProjectDAOImpleクラスのみで
 
 そのProjectDAOImpleはシングルトンになっています。
 
-(
-シングルトンを知らないお方は、こっちらに整理しておきました
-https://meaownworld.blogspot.kr/2018/02/effective-java-3.html
-)
+(シングルトンを知らないお方は、こっちらに整理しておきました
+
+https://meaownworld.blogspot.kr/2018/02/effective-java-3.html)
 
 なので、コンストラクタは一回だけ呼ばれることになり。PCのリソースを節約してくれます。
 
