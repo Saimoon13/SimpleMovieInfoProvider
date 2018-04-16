@@ -1,5 +1,7 @@
 # SimpleMovieInfoProvider
 
+[![SwingTest](http://img.youtube.com/vi/sqHn9i6pRfg/0.jpg)](http://www.youtube.com/watch?v=sqHn9i6pRfg "SwingTest")
+
 Project Name: SwingMovie
 
 Environment: Oracle 6g, WindowBuilder, Swing
