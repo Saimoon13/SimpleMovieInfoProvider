@@ -171,9 +171,11 @@ https://meaownworld.blogspot.kr/2018/03/strategy-pattern.html
 
 
 
+* Queries and queries.properties
 
+Queriesは上で述べました４の問題を解決するためのクラスです。
 
-Queriesと、
+QueriesがSQLコマンドを作ってくれる工場の役割を、queries.propertiesが製品の役割を果たします。
 
 
 
