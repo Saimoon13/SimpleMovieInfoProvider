@@ -211,7 +211,26 @@ Connection自体を生成してはその二つの目的を持つことになり�
 
 ｄ
 
-JdbcContextの
+JdbcContextのポイントは四つあります。
+
+１はコンストラクタにOracleDriverを呼び出しています。
+
+JdbcContextを呼び出すクラスはProjectDAOImpleクラスのみで
+
+そのProjectDAOImpleはシングルトンになっています。
+
+(
+シングルトンを知らないお方は、こっちらに整理しておきました
+https://meaownworld.blogspot.kr/2018/02/effective-java-3.html
+)
+
+なので、コンストラクタは一回だけ呼ばれることになり。PCのリソースを節約してくれます。
+
+２はInsert, update, deleteなどのSQLコマンドを処理するためのメソッドです。
+
+中身はこうなっております。
+
+ProjectDAOImpleからPreparedStatementを含んだ戦略がパラメータに入ってくると
 
 
 </p>
