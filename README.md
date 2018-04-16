@@ -62,7 +62,7 @@ Total elapsed time reform: 6 hour
 
 **１．構成が雑すぎる。**
 
-ーーーーーーーーーーーーーーーー１－－－－－－－－－－－－－－－－－－
+![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/01.png)
 
 左が直す前の構成で、右が直した構成です。
 SwingMovieは大きく三つの機能で分けられております。
