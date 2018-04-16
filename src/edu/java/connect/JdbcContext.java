@@ -57,16 +57,5 @@ public class JdbcContext {
 		}
 		return crs;
 	}
-
-	public void executeSql(final String query) throws SQLException {
-		workWithStatementStrategyUpdate(
-			new StatementStrategy() {
-				public PreparedStatement makePreparedStatement(Connection c)
-						throws SQLException {
-					return c.prepareStatement(query);
-				}
-			}
-		);
-	}
 }
 

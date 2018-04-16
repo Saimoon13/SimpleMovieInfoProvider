@@ -73,9 +73,8 @@ public class ProjectDAOImple implements ProjectDAO {
     @Override
     public List<Rate> select(Main window) throws SQLException {
 
-        CachedRowSetImpl crs;
         List<Rate> list = new ArrayList<>();
-
+        CachedRowSetImpl crs;
         crs = this.jdbcContext.workWithStatementStrategyQuery(
                 (Connection c) -> {
                     PreparedStatement ps =

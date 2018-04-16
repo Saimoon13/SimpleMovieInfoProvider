@@ -42,7 +42,7 @@ public class MyFrame_Rate extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel label = new JLabel("Please, Input text within 30 characters");
+		JLabel label = new JLabel("Plz, Input within 30 char");
 		label.setBounds(10, 166, 153, 15);
 		contentPane.add(label);
 		
@@ -71,7 +71,7 @@ public class MyFrame_Rate extends JFrame {
 				String name = parent.getUserName();
 				String contents = textCt.getText();
 				if(contents.length()>=30) {
-					JOptionPane.showMessageDialog(frame, "Please, Input text within 30 characters");
+					JOptionPane.showMessageDialog(frame, "Please, Input within 30 characters");
 					return;
 				}
 				String title = parent.getDbtitleMain();

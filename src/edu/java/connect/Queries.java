@@ -11,8 +11,7 @@ public class Queries {
     private static Properties props;
 
     public static Properties getQueries() throws SQLException {
-        InputStream is =
-                Queries.class.getResourceAsStream("/edu/java/connect/"+propFileName);
+        InputStream is = Queries.class.getResourceAsStream("/edu/java/connect/"+propFileName);
         if (is == null){
             throw new SQLException("Unable to load property file: " + propFileName);
         }
