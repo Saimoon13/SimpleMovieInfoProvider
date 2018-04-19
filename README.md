@@ -30,10 +30,10 @@ Total elapsed time reform: 6 hour
 
 始めてJavaを3週間学んで作ったSwingプロジェクトです。
 
-簡単に映画の情報を提供して、
+映画の情報を提供して、
 映画を見た人のコメントを入力するプロジェクトです。
 
-そのプログラムは上のURLをアップロードしております。
+Refactoring前のプログラムは上のURLをアップロードしております。
 
 
 私が最初作る時は、DesignPatternに対する知識もなかったし、
@@ -52,7 +52,7 @@ Total elapsed time reform: 6 hour
 
 そのため、昔作ったこのプログラムをRefactoringしようと思いました。
 
-プロジェクトの機能は少しの間、上のYoutubeをご覧頂きたいと思っております。
+プロジェクトの機能は、上のYoutubeを見てください。
 
 
 
