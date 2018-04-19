@@ -89,7 +89,7 @@ GUI、MyFrame_Loginはユーザーに見せるための処です。
 
 なので、プログラムの外見を具現化しております。
 
-そいうクラスでDBのConnectが直接行われております。
+そういうクラスでDBのConnectが直接行われております。
 
 &nbsp;
 
@@ -113,16 +113,13 @@ DBとのConnectを管理するクラスDAOにメソッドごとに
 * SQLコマンドのPreparedStatement
 * データセットのResultSet（Select文を使う時のみ使います）
 
-イメージの制約のやめ、イメージでは3行になっておりますけれども
-
-このこどは各30行ほどのロジックです。
+イメージでは3行のみですけれども、本来は各30行ほどのコードです。
 
 上の２のコードと合わせれば「6回」の同じコードが使われ
 
 30ｘ６をして、似ているコードが「180行」使われております。
 
-
-この共通の処は別の方法を考案して、重複を抑える必要があります。
+別の方法を考案して、重複を抑える必要があります。
 
 &nbsp;
 
@@ -139,11 +136,9 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 ## 問題点の解決方法
 
-**１問題（構成の問題）の解決方法**
+**問題 1（構成の問題）の解決方法**
 
-構成の問題点は上で説明しましたので、
-
-クラスの説明をさせて頂きます。
+この問題点は上でもう解決しましたので、クラスの説明をさせて頂きます。
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/05.png)
 
@@ -151,15 +146,15 @@ Interfaceは「データを実装するために使う」という一つの約�
 
 まず、以前にはなかったJdbcContextが出来ました。
 
-そのクラスの役割はOracleDBからのConnectionを管理することです。
+このクラスの役割はOracleDBからのConnectionを管理することです。
 
 先に話してましたが、以前のコードは合わせて6回のConnectionを呼び出して、作っております。
 
-その重複問題を解決するための策です。
+その重複問題を解決するためのクラスです。
 
 * ProjectDAO Interface and implementation Class
 
-ProjectDAO、ProjectDAOImpleは以前と同じく、DBからの交流のコードが組み込まれておりますが、
+ProjectDAO、ProjectDAOImpleは以前と同じく、DB交流のためのクラスですが
 
 その中のコードの効率性は確実によくなっております。
 
@@ -188,7 +183,7 @@ https://meaownworld.blogspot.kr/2018/03/strategy-pattern.html
 
 * Queries and queries.properties
 
-Queriesは上で述べました４の問題を解決するためのクラスです。
+Queriesは上で述べました問題 4を解決するためのクラスです。
 
 QueriesがSQLコマンドを作ってくれる工場の役を、queries.propertiesが製品の役をします。
 
@@ -202,7 +197,7 @@ DomainやViewは最初作る時も大分手を込んで作っておりますし�
 
 &nbsp;
 
-**２問題（ViewでのConnectionの発生）の解決方法**
+**問題 2（ViewでのConnectionの発生）の解決方法**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/06.png)
 
@@ -212,9 +207,9 @@ DomainやViewは最初作る時も大分手を込んで作っておりますし�
 
 &nbsp;
 
-**３問題（重複コードの排除）の解決方法**
+**問題 3（重複コードの排除）の解決方法**
 
-３の問題は一番修正点が多いConnectionのクラス作りです。
+問題 3は一番修正点が多いConnectionのクラス作りです。
 
 まず、DAOImpleにConnectionのコードを排除します。
 
@@ -277,20 +272,20 @@ CacheRowSetImplの形でリターンするように仕組まれております�
 
 左が以前のコードで、右がRefactoringしたコードです。
 
-ここではコードを短くするため、Ramda式を使いました。
+ここではコードを簡略化するため、Ramda式を使いました。
 
-接続とその中身はJdbcContextクラスに預けておりますので、このメソッドの役目は
+DBConnectionに必要なコードはJdbcContextクラスに任せたので、このメソッドの役目は
 
-ただ、PreparedStatementを用意したストラテジーを作り、転送することのみです。
+ただ、PreparedStatementを含んだストラテジーを作り、転送することのみです。
 
 DAOの目的を忠実に果たしています。
 
-左に比べれば右のコードが学実に簡略化しております。
+左に比べれば右のコードが確実に簡略化しております。
 
 
 &nbsp;
 
-ResultSetを使うSelect文も一つ前後を比べてみます。
+ResultSetを使うSelect文も前後を比べてみます。
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/11.png)
 
