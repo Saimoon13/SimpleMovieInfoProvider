@@ -41,7 +41,7 @@ Total elapsed time reform: 6 hour
 
 이 프로그램은 크게 4가지 문제가 있습니다. 하나씩 설명해보겠습니다.
 
-** 1. 구성이 난잡하다 **
+**1. 구성이 난잡하다**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/01.png)
 
@@ -56,7 +56,7 @@ SwingMovie는 크게 3가지 기능으로 분류됩니다
 
 &nbsp;
 
-** 2. View에서 DB와 커넥션이 발생합니다. **
+**2. View에서 DB와 커넥션이 발생합니다.**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/02.png)
 
@@ -74,7 +74,7 @@ Java의 클래스에서는 한 클래스에 한 기능이 이상적입니다.
 
 &nbsp;
 
-** 3. DAO에서 중복 코드가 너무 많습니다. **
+**3. DAO에서 중복 코드가 너무 많습니다.**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/03.png)
 
@@ -94,7 +94,7 @@ DB와의 연결을 관리하는 클래스 DAO의 메소드별로 같은 코드�
 
 &nbsp;
 
-** 4. Interface를 문자열의 이용에 사용하고 있습니다. **
+**4. Interface를 문자열의 이용에 사용하고 있습니다.**
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/04.png)
 
