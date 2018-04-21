@@ -154,7 +154,7 @@ Queries가 SQL명령어를 만들어주는 공장의 역할, properties가 제�
 
 
 
-* その他
+* 그 외
 
 Connection 이외에는 크게 바뀐점이 없습니다.
 
@@ -193,7 +193,7 @@ Connection자체의 생성은 그 목적에 맞지 않기에
 
 ![alt text](https://github.com/Saimoon13/SimpleMovieInfoProvider/blob/master/libs/image%20for%20readme/07.png)
 
-JdbcContext에서 주목해야할 점은 4군데 입니다.
+JdbcContext에서 주목해야할 점은 3군데 입니다.
 
 1은 생성자에서 OracleDriver를 등록합니다.
 
