@@ -12,7 +12,7 @@ Language and design pattern used : Java 8, Strategy pattern
 
 Project Type: Refactoring - https://github.com/Saimoon13/OldSimpleMovieInfoProvider
 
-Total elapsed time original: 3 weeks
+Total elapsed time original: 10 days
 
 Total elapsed time reform: 6 hour
 
