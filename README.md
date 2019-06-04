@@ -18,4 +18,4 @@ Total elapsed time reform: 6 hour
 
 2019.06.04追加：https://www.slideshare.net/secret/5yn6G54mYwRoje　
   
-  （リファクタリング内容まとめー二つ目のプレジェット）
+  （リファクタリング内容まとめ　二つ目のプレジェット）
